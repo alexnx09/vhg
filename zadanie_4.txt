@@ -1,0 +1,12 @@
+import turtle
+t = turtle.Turtle()
+t.shape('turtle')
+t.pensize(5)
+t.pencolor("yellow")
+
+t.dot(8)
+t.penup()
+t.goto(0, -70)
+t.pendown()
+t.circle(70)
+turtle.exitonclick()

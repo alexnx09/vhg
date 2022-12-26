@@ -1,0 +1,29 @@
+import turtle
+t = turtle.Turtle()
+t.penup()
+t.goto(-100, 0)
+t.pendown()
+t.pencolor("blue")
+t.pensize(2)
+t.shape('turtle')
+circles = 3
+sectors = 5
+space_btw_cls = 25
+turn = 360 / sectors
+angle = 0 
+for i in range(circles * sectors):
+    angle += turn
+    radius = space_btw_cls / 360 * angle
+    t.circle(radius, turn)
+n = 5
+pen = turtle.Turtle()
+pen.penup()
+pen.goto(100, 0)
+pen.pendown()
+pen.shape("turtle")
+pen.pensize(2)
+pen.pencolor("orange")
+for i in range(n * 4):
+    pen.forward(i * 5)
+    pen.right(90)
+turtle.done()

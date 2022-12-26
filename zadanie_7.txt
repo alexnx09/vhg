@@ -1,0 +1,14 @@
+import turtle
+t = turtle.Turtle()
+t.shape('turtle')
+t.pencolor("pink")
+t.pensize(2)
+circles = 3
+sectors = 7
+space_btw_cls = 25
+turn = 360 / sectors
+angle = 0 
+for i in range(circles*sectors):
+    angle += turn
+    radius = space_btw_cls / 360 * angle
+    t.circle(radius, turn)

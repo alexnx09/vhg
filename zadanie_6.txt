@@ -1,0 +1,10 @@
+import turtle
+t = turtle.Turtle()
+t.shape('turtle')
+n = 5
+t.pensize(3)
+t.pencolor("purple")
+for i in range(n * 5):
+    t.forward(i * 5)
+    t.right(60)
+turtle.done()

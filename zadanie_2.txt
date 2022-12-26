@@ -1,0 +1,16 @@
+import turtle
+t = turtle.Turtle()
+t.shape('turtle')
+t.pencolor("black")
+t.pensize(2)
+for i in range(4) :
+  t.fd(80)
+  t.rt(90)
+t.penup()
+t.goto(-25, 25)
+t.pendown()
+t.pencolor("red")
+t.pensize(2)
+for i in range(4):
+    t.fd(130)
+    t.rt(90)
